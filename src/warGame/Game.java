@@ -2,10 +2,25 @@ package warGame;
 
 public class Game {
 	
-	public Game(Player player1, Player player2, Deck deck) {
+	Player player1;
+	Player player2;
+	Deck deck = new Deck();
+	
+	
+	public Game(Player player1, Player player2, Deck deck1) {
 		
+		this.player1 = player1;
+		this.player2 = player2;
+		this.deck = deck1;
 		
+	}
+	
+	public void run() {
+		
+			
 		deck.deal(player1, player2);
+		
+		
 		
 		//player1.describe();
 		//player2.describe();
@@ -40,11 +55,14 @@ public class Game {
 		}else {
 			System.out.println("ITS A DRAW");
 		}
+		
+		
 
 		
-}
+	}
 	
+}
 	
 	
 
-}
+
